@@ -12,7 +12,11 @@
 		list-style: none;
 		text-decoration: none;
 	}
-	
+	section{
+		width: 100%;
+		height: calc(100vh - 160px);
+		background-color: lightgray;
+	}
 	
 </style>
 </head>
