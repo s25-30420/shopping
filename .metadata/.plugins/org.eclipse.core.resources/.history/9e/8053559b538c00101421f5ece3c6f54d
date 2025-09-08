@@ -37,14 +37,9 @@
 			<table border="1">
 				<tr>
 					<td>상품이름</td>
-					<td><select name = "giftnim">
-							<option value="baeblade">팽이</option>
-							<option value="nintando">닌텐도</option>
-							<option value="pokemon">포켓몬</option>
-							<option value="overwatch">오버워치</option>
-							<option value="kamanrider">가면라이더</option>
-						</select>
-					</td>	
+					<select>
+						<option></option>
+					</select>
 				</tr>
 				<tr>
 					<td>고객번호</td>
@@ -53,14 +48,7 @@
 				</tr>
 				<tr>
 					<td>결제방법</td>
-					<td><select name = "giftnim">
-							<option value="baeblade">팽이</option>
-							<option value="nintando">닌텐도</option>
-							<option value="pokemon">포켓몬</option>
-							<option value="overwatch">오버워치</option>
-							<option value="kamanrider">가면라이더</option>
-						</select>
-					</td>
+					
 				</tr>
 				<tr>
 					<td>배송요청사항</td>
