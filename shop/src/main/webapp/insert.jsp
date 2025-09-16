@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,41 +36,11 @@
 		<h2> 코트예약 </h2>
 		<form name="frm" method="post" action="insert">
 			<table border="1">
-				<tr>
-					<td>상품이름</td>
-					<td><select name = "giftnim">
-							<option value="baeblade">팽이</option>
-							<option value="nintando">닌텐도</option>
-							<option value="pokemon">포켓몬</option>
-							<option value="overwatch">오버워치</option>
-							<option value="kamanrider">가면라이더</option>
-						</select>
-					</td>	
-				</tr>
-				<tr>
-					<td>고객번호</td>
-					<td><input type="text" name="cust_no"></td>
-					<td>예)1001</td>
-				</tr>
-				<tr>
-					<td>결제방법</td>
-					<td><select name = "giftnim">
-							<option value="baeblade">팽이</option>
-							<option value="nintando">닌텐도</option>
-							<option value="pokemon">포켓몬</option>
-							<option value="overwatch">오버워치</option>
-							<option value="kamanrider">가면라이더</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td>배송요청사항</td>
-					
-				</tr>
+				
 				<tr>
 					<td colspan="3" style="text-align:center">
-						<input type="button" value="예약등록" onclick="checkResv()">
-						<input type="button" value="다시쓰기" onclick="resetResv()">
+						<input type="button" value="주문하기" onclick="orderResv()">
+						<input type="button" value="취소" onclick="cancelResv()">
 					</td>
 				</tr>
 			</table>

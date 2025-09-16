@@ -1,0 +1,28 @@
+package controller;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import introduce.introduce;
+
+public class introduceServlet {
+	@WebServlet("/list")
+	public class ListServlet extends HttpServlet {
+	  protected void doGet(HttpServletRequest request, HttpServletResponse response)
+	          throws ServletException, IOException {
+	      introduce dao = new introduce();
+	      List<String> list = dao.getAll();
+
+	      request.setAttribute("list", list);
+	      request.getRequestDispatcher("list.jsp").forward(request, response);
+	  }
+	}
+
+
+}
