@@ -1,0 +1,43 @@
+create table tbl_resv(
+	resv_no char(8) not null primary key,
+	resv_date char(8),
+	court_no char(4),
+	cust_no char(4)
+);
+
+select * from tbl_resv
+insert into TBL_RESV values('20230001', '20230101', 'C001', '1005');
+insert into TBL_RESV values('20230002', '20230101', 'C002', '1004');
+insert into TBL_RESV values('20230003', '20230101', 'C003', '1003');
+insert into TBL_RESV values('20230004', '20230101', 'C004', '1002');
+insert into TBL_RESV values('20230005', '20230101', 'C005', '1001');
+
+
+
+
+create table tbl_shop(
+	giftnim varchar2(30),
+	cust_no varchar2(30) not null primary key,
+	pay varchar2(30),
+	requests varchar2(30)
+);
+
+drop table tbl_shop
+
+insert into tbl_shop values('beyblade', '1234', 'toss', 'request_1');
+insert into tbl_shop values('nintando', '2341', 'kakao', 'request_2');
+insert into tbl_shop values('pokemon', '3412', 'kb', 'request_3');
+insert into tbl_shop values('overwatch', '4123', 'shinhan', 'request_4');
+insert into tbl_shop values('kamanrider', '4321', 'minsaeng', 'request_5');
+
+
+
+
+
+
+
+
+
+
+
+

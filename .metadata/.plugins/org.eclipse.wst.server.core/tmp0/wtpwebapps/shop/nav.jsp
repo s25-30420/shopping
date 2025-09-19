@@ -21,9 +21,8 @@ nav a {
 </head>
 <body>
 	<nav>
-		<a href="introduce.jsp">상품소개</a>
 		<a href="insert.jsp">상품구매</a>
-		<a href="count.jsp">구매내역조회</a>
+		<a href="list">판매내역</a>
 		<a href="index.jsp">홈으로</a>
 	</nav>
 </body>

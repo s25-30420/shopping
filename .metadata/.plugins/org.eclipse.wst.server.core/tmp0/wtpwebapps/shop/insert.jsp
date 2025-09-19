@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -65,18 +64,18 @@
 				<tr>
 					<td>배송요청사항</td>
 					<td><select name = "requests">
-							<option value="request_1">문앞에 놓아주세요</option>
-							<option value="request_2">배송전에 연락바랍니다</option>
-							<option value="request_3">초인종눌러주세요</option>
-							<option value="request_4">부재시 문앞에 놓아주세요</option>
-							<option value="request_5">배달보관함에 넣어주세요</option>
+							<option value="문앞에_놓아주세요">문앞에 놓아주세요</option>
+							<option value="배송전에_연락바랍니다">배송전에 연락바랍니다</option>
+							<option value="초인종_눌러주세요">초인종눌러주세요</option>
+							<option value="부재시_문앞에_놓아주세요">부재시 문앞에 놓아주세요</option>
+							<option value="배달보관함에_넣어주세요">배달보관함에 넣어주세요</option>
 						</select>
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" style="text-align:center">
-						<input type="button" value="주문하기" onclick="orderResv()">
-						<input type="button" value="취소" onclick="cancelResv()">
+						<input type="button" value="예약등록" onclick="checkResv()">
+						<input type="button" value="다시쓰기" onclick="resetResv()">
 					</td>
 				</tr>
 			</table>

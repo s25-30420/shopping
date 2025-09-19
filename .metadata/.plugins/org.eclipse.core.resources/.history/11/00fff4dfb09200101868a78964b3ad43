@@ -1,0 +1,75 @@
+package model;
+
+public class ResvationDTO {
+	 private String giftnim;
+     private String custNo;
+     private String pay;
+     private String requests;
+     
+     public ResvationDTO() {
+     }
+   
+     public ResvationDTO(String giftnim, String custNo, String pay, String requests) {
+    	 this.giftnim = giftnim;
+         this.custNo = custNo;
+         
+         if (pay.equals("toss")) {
+        	 this.pay = "토스페이";
+         }
+         else if(pay.equals("kakao")) {
+        	 this.pay = "카카오페이";
+         }
+         else if(pay.equals("kb")) {
+        	 this.pay = "kbpay";
+         }
+         else if(pay.equals("shinhan")) {
+        	 this.pay = "solpay";
+         }
+         else if(pay.equals("minsaeng")) {
+        	 this.pay = "민생지원금";
+         }
+         
+         
+         if (requests.equals("request_1")) {
+        	 this.requests = "문앞에 놓아주세요";
+         }
+         else if(requests.equals("request_2")) {
+        	 this.requests = "배송전에 연락바랍니다";
+         }
+         else if(requests.equals("request_3")) {
+        	 this.requests = "초인종눌러주세요";
+         }
+         else if(requests.equals("request_4")) {
+        	 this.requests = "부재시 문앞에 놓아주세요";
+         }
+         else if(requests.equals("request_5")) {
+        	 this.requests = "배달보관함에 넣어주세요";
+         }
+     }
+	public String getgiftnim() {
+		return giftnim;
+	}
+	public void setgiftnim(String giftnim) {
+		this.giftnim = giftnim;
+	}
+	public String getCustNo() {
+		return custNo;
+	}
+	public void setCustNo(String custNo) {
+		this.custNo = custNo;
+	}
+	public String getpay() {
+		return pay;
+	}
+	public void setpay(String pay) {
+		this.pay = pay;
+	}
+	public String getrequests() {
+		return requests;
+	}
+	public void setCourtNo(String requests) {
+		this.requests = requests;
+	}
+     
+     
+}

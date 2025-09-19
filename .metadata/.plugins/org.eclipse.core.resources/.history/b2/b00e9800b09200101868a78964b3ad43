@@ -1,0 +1,47 @@
+package model;
+
+public class ResvationDTO {
+	 private String giftnim;
+     private String custNo;
+     private String pay;
+     private String requests;
+     
+     public ResvationDTO() {
+     }
+   
+     public ResvationDTO(String giftnim, String custNo, String pay, String requests) {
+         this.giftnim = giftnim;
+         this.custNo = custNo;
+         
+         if pay.equals("kakao"){
+        	 this.pay = pay;
+         }
+         this.requests = requests;
+     }
+	public String getgiftnim() {
+		return giftnim;
+	}
+	public void setgiftnim(String giftnim) {
+		this.giftnim = giftnim;
+	}
+	public String getCustNo() {
+		return custNo;
+	}
+	public void setCustNo(String custNo) {
+		this.custNo = custNo;
+	}
+	public String getpay() {
+		return pay;
+	}
+	public void setpay(String pay) {
+		this.pay = pay;
+	}
+	public String getrequests() {
+		return requests;
+	}
+	public void setCourtNo(String requests) {
+		this.requests = requests;
+	}
+     
+     
+}
