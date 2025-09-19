@@ -24,7 +24,7 @@
 <jsp:include page="header.jsp"></jsp:include>
 <jsp:include page="nav.jsp"></jsp:include>
 <section>
-	<h3>창 쇼핑몰</h3>
+	<h3>쇼핑몰</h3>
 	<p>
 		창 쇼핑몰에 오신 것을 환영합니다. <br>
 		best셀러 "강신원" <br>
